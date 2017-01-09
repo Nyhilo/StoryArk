@@ -3,6 +3,17 @@ This will be treated as pseudocode for whatever javascript/SQL/PHP/Whatever I en
 """
 
 # Classes
+class story:
+    def __init__(self, masterNode):
+        self.master = {masterNode.name : masterNode}
+
+    def updateNode(self, node):
+        self.master[node.name] = node
+
+    def deleteNode(self):
+        pass
+
+
 class node:
     def __init__(self, Name, ArcText, *Branches):
         self.name = Name
